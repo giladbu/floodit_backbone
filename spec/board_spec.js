@@ -3,14 +3,14 @@ describe("Board", function() {
   var size = 3;
 
   beforeEach(function() {
-    board = new Board(size)
+    board = new Board([],size)
   });
 
-  it("should have a size " + size, function() {
-    expect(board.size).toEqual(size);
+  it("should have a board_size " + size, function() {
+    expect(board.boardSize).toEqual(size);
   });
 
-//  it("should have " + size + "x" + size + " cells", function() {
-//    expect(board.length).toEqual(size*size);
-//  });
+  it("should have " + size + "x" + size + " cells", function() {
+    expect(board.length).toEqual(size*size);
+  });
 });
