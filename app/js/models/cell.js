@@ -9,4 +9,12 @@ var Cell = Backbone.Model.extend({
     y: 0,
     color: 'green'
   },
+
+  boardSize: function() {
+    if (typeof this.collection != 'undefined') {
+      return this.collection.boardSize;
+    } else {
+      return 12;
+    }
+  }
 });
