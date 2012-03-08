@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="../assets/bootstrap/css/bootstrap.css" rel="stylesheet">
    <link href="../assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+   <link href="../assets/css/application.css" rel="stylesheet">
    <style type="text/css">
      body {
        padding-top: 60px;
@@ -18,7 +19,7 @@
     <![endif]-->
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container">
     
   </div>
   <!-- Le javascript
@@ -34,5 +35,13 @@
 
   <script src="js/models/cell.js"></script>
   <script src="js/models/board.js"></script>
+  <script src="js/views/cell_view.js"></script>
+  <script src="js/views/board_control_view.js"></script>
+  <script src="js/views/board_view.js"></script>
+  <script>
+  $(document).ready(function() {
+    new BoardView({model: new Board([], 12)});
+  });
+  </script>
 </body>
 </html>

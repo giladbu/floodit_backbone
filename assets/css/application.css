@@ -1,0 +1,16 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.cell {
+  border: 1px solid black;
+  min-height: 30px;
+  margin-bottom: 20px;
+}
+
+.board_control {
+  margin-bottom: 20px;
+}
+
+.board_control .controls {
+  border: 2px solid black;
+  padding-top: 20px;
+}
